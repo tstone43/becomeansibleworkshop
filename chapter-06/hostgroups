@@ -1,0 +1,15 @@
+[linux:vars]
+ansible_user=ansible
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+[linux]
+vm-linuxweb7.westus2.cloudapp.azure.com
+
+[windows:vars]
+ansible_user=ansible
+ansible_winrm_server_cert_validation=ignore
+ansible_connection=winrm
+
+[windows]
+vm-winweb56.westus2.cloudapp.azure.com
+

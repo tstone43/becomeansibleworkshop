@@ -1,0 +1,3 @@
+vm-winweb56.westus2.cloudapp.azure.com ansible_user=ansible ansible_winrm_server_cert_validation=ignore ansible_connection=winrm
+
+vm-linuxweb7.westus2.cloudapp.azure.com ansible_user=ansible ansible_ssh_common_args='-o StrictHostKeyChecking=no'

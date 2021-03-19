@@ -1,0 +1,14 @@
+---
+- hosts: windows
+  gather_facts: false
+
+  vars_prompt:
+    - name: password
+      prompt: "Enter ansible user password"
+
+  vars:
+    ansible_password: "{{ password }}"
+
+  tasks:
+  - name: run win_ping
+    win_ping:
