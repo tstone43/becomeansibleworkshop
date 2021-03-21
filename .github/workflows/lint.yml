@@ -5,13 +5,13 @@ on: [push, pull_request]
 jobs:
   build:
 
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-  - name: checkout repo
-    uses: actions/checkout@v2
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v2
 
-  - name: Lint Ansible Playbooks
-    uses: ansible/ansible-lint-action@main
-    with:
-      targets: ""
+    - name: Lint Ansible Playbooks
+      uses: ansible/ansible-lint-action@main
+      with:
+        targets: ""
