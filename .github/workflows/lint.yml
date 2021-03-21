@@ -14,4 +14,11 @@ jobs:
     - name: Lint Ansible Playbooks
       uses: ansible/ansible-lint-action@master
       with:
-        targets: ""
+        targets: |
+          .github/actions/ansible/action.yml
+          .github/actions/ansible/configure_iis_web_server.yml
+          .github/actions/ansible/configure_nginx_web_server.yml
+          .github/actions/ansible/hosts_azure_rm.yml
+          .github/actions/ansible/roles/requirements.yml
+          .github/actions/ansible/site.yml
+          .github/workflows/deploy_ansible.yml
