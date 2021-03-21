@@ -7,3 +7,12 @@ on:
   pull_request:
     branches:
     - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v1
+    - name: create Ansible container
+      uses: ./.github/actions/ansible
